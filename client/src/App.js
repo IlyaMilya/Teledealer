@@ -1,29 +1,24 @@
-import { useState, useEffect } from "react";
-import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+import Sidebar from "./components/Sidebar";
+import {BrowserRouter, Routes, Route} from "react-router-dom"
+import Leads from "./components/Leads";
+import Deals from "./components/Deals";
+import Guidelines from "./components/Guidelines";
+import User from "./components/User";
 function App() {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    fetch("/hello")
-      .then((r) => r.json())
-      .then((data) => setCount(data.count));
-  }, []);
-
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Switch>
-          <Route path="/testing">
-            <h1>Test Route</h1>
-          </Route>
-          <Route path="/">
-            <h1>Page Count: {count}</h1>
-          </Route>
-        </Switch>
-      </div>
-    </BrowserRouter>
-  );
+ return( 
+ 
+   
+<>
+<Sidebar/>
+  <BrowserRouter>
+    <Route path="/leads" element={<Leads/>}/>
+    <Route path="/deals" element={<Deals/>}/>
+    <Route path="/user" element={<User/>}/>
+    <Route path="/guidelines" element={<Guidelines/>}/>
+  </BrowserRouter>
+  </>
+ )
 }
 
 export default App;
