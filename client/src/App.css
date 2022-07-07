@@ -11,12 +11,7 @@ body {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.sidebar {
 
-  height: 100%;
-  width: 300 px;
-  /* background-color: blueviolet; */
-}
 
 .container {
   display:flex;
@@ -29,8 +24,10 @@ main {
 
 .sidebar {
 
-  background: rgb(0, 0, 0);
+  background: lightsalmon;
   height: 100vh;
+  width: 100px;
+  
 }
 
 .top-section {
@@ -40,14 +37,15 @@ padding: 20px 15px;
 }
 
 .logo {
-  font-size: 50px;
-  color:rgb(203, 162, 162);
+  font-size: 40px;
+  color:aqua;
 }
 
 .bars {
   display: flex;
-  font-size: 30px;
-  margin-left: 100px ;
+  color: rgb(98, 24, 24);
+  font-size: 70px;
+  margin-left: 0px ;
 }
 
 .link {
@@ -55,13 +53,21 @@ padding: 20px 15px;
   color: white;
   padding: 10px 15px;
   gap: 50px;
-  transition: all 0.5s;
-}
+  transition: all 1.0s;
+  /* box-shadow: 0px 2px 4px rgba(0,0,0,0.15), 
+                0px 4px 8px rgba(0,0,0,0.15), 
+                0px 8px 16px rgba(0,0,0,0.15), 
+                0px 16px 32px rgba(0,0,0,0.15); */
+  
+  }
+
 
 .link:hover{
-  background-color: rgb(26, 53, 83);
-  color: yellow;
+  background-color: aqua;
+  color: lightsalmon;
   transition: all 0.5s;
+  font-size: 200px; 
+  zoom: 30px;
   
 }
 
@@ -69,4 +75,8 @@ padding: 20px 15px;
   background: lightsalmon;
   color:rgb(98, 24, 24);
    
+}
+
+.icon, .link_text {
+font-size: 60px;
 }
