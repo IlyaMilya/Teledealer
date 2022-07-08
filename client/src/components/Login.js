@@ -1,15 +1,16 @@
 
 import react from 'react'
 
+
 function Login() {
 
-    return (    
-        <div>
-            ISJIAjsiafjfaifiasjfisjfiafjijsifa
-            asifaisfjasifaisjfiafsjjisafjfsifasf
-        </div> 
-    
-    )
+
+return (
+
+    <div>Login</div>
+)
+
 }
 
-export default Login ; 
+
+export default Login;

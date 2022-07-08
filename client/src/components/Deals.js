@@ -1,13 +1,17 @@
 
-import react from 'react';
 
 
-function Deals () {
+
+function Deals ({deals}) {
 
     
+    
+   
+
     return (
 
-        <div> 
+        <div>
+        <h1></h1>
 
         
         </div>

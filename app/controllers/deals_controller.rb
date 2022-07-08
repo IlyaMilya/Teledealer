@@ -1,7 +1,7 @@
 class DealsController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :review_not_found
     rescue_from ActiveRecord::RecordInvalid, with: :invalid_record
-    
+
     def index
         deal = Deal.all
         render json: deal
@@ -36,7 +36,7 @@ class DealsController < ApplicationController
     end
 
     def review_not_found
-        render json: {error: "Review not found"}, status: :not_found
+        render json: {error: "Deal not found"}, status: :not_found
     end
 
     def invalid_record(exception)
