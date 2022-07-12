@@ -1,10 +1,11 @@
 import react from 'react';
 import Sidebar from './Sidebar';
 import Guidelines from './Guidelines';
-import Deals from './Deals';
-import Leads from './Leads';
+import Deals from './DealsPage';
+import Leads from './LeadsPage';
 import Login from './Login';
 import {useEffect, useState} from 'react';
+import DealsPage from './DealsPage';
 
 
 function Home() {
@@ -21,7 +22,9 @@ function Home() {
     // useEffect(((request() )), [])
 
 return (
-    <Sidebar /> 
+    
+
+  <div> hi there </div>
 
     
 )

@@ -32,7 +32,7 @@ class DealsController < ApplicationController
     private
 
     def review_params
-        params.permit()
+        params.permit(:client_name, :client_email, :yearly_income, :loan_amount, :employee_id, :lead_id, :comment)
     end
 
     def review_not_found

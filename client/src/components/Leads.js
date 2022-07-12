@@ -1,16 +1,21 @@
+
+
 import react from 'react'
 
-function Leads() {
 
-    
+function Leads({lead}) {
 
-    return (
-        <div>
-            <h1>
-            Leads
-            </h1>
+
+    return(
+
+            <div className= "leads-container">
+
+        <h1 className="client-name">{lead.full_name}</h1>
+        <h2 className="client-email">{lead.email}</h2>
+        <h2 className= "client-number">{lead.phone_number}</h2>
+       
         </div>
-
+       
     )
 }
 

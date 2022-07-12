@@ -8,9 +8,9 @@ import { NavLink } from 'react-router-dom';
 
 
 
-function Sidebar({children}) {
-const [isOpen, setIsOpen]= useState(false);
-const toggle = () => setIsOpen(!isOpen);
+function Sidebar({}) {
+// const [isOpen, setIsOpen]= useState(false);
+// const toggle = () => setIsOpen(!isOpen);
 
     const menuItem = [
 
@@ -37,28 +37,28 @@ const toggle = () => setIsOpen(!isOpen);
     ]
 
     return (
-        <div className="container">
-            <div style = {{width: isOpen ? "500px" : "160px" }} className="sidebar">
+        // <div className="container">
+            <div style = {{width: "398px" }} className="sidebar">
                 <div className="top-section">
-                    <h1 style = {{display: isOpen ? "block" : "none" }}className="logo"> 
+                    <h1 style = {{display: "block"  }}className="logo"> 
                     <GiRotaryPhone/>TeleDealer </h1>
-                        <div style = {{margin_left: isOpen ? "500px" : "500px"}} className='bars'>
-                            <FaBars onClick={toggle}/>  
+                        <div style={{marginLeft:  "50px"}} className='bars'>
+                            {/* <FaBars onClick={toggle}/>   */}
                         </div>
                     </div>
                 {
                 menuItem.map((item, index)=>(
                 <NavLink to={item.path} key={index} className="link" activeclassname="active">
                     <div className="icon">{item.icon}</div>
-                    <div style = {{display: isOpen ? "block" : "none"}}className="link_text">{item.name}</div>
+                    <div style = {{display: "block" }}className="link_text">{item.name}</div>
 
 
                 </NavLink>
                 ))
                 }
             </div>
-            <main>{children}</main>
-        </div>
+            
+        // </div>
     )
 
 }
