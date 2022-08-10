@@ -3,6 +3,13 @@
 
 function Deals ({deal}) {
 
+
+    const [showEdit, setShowEdit] = useState(true);
+
+    function editButtonHandler() {
+        setShowEdit(!showEdit);
+      }
+      
     return ( 
        
        <div className="deals-container">
