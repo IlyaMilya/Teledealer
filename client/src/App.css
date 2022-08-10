@@ -12,7 +12,37 @@ body {
   background-color: lightgrey;
 }
 
+.login-logo {
+text-align:center;
+font-size: 50px;
+color: salmon;
+}
+.login-container {
+margin-top: 150px;
+border-style:hidden;
+margin-left:420px;
+margin-right:420px;
+padding-top: 50px;
+padding-bottom: 50px;
+border-radius: 30px;
+background-color:lightblue;
+}
 
+.mantine-PasswordInput-root{
+
+  padding-left: 50px;
+padding-right: 50px;
+
+}
+
+.mantine-TextInput-root{
+padding-left: 50px;
+padding-right: 50px;
+
+}
+.mantine-Button-root{
+  position: center;
+}
 
 .container {
   display:flex;
@@ -24,7 +54,7 @@ main {
 }
 
 .sidebar {
-position: fixed;
+  position: fixed;
   background: lightsalmon;
   height: 100vh;
   width: 100px;
@@ -32,6 +62,8 @@ position: fixed;
   border-radius: 30px;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyasocuZSdehmxhKNazhkX2mYNZHa9H9LLBA&usqp=CAU');
   background-blend-mode:exclusion;
+  box-shadow: 0px 0px 300px salmon;
+  margin-bottom: 30px;
 
 }
 
@@ -73,6 +105,7 @@ padding: 20px 15px;
   transition: all 0.5s;
   font-size: 200px; 
   zoom: 30px;
+  box-shadow: 20px 50px 100px aqua;
   
 }
 
@@ -88,3 +121,26 @@ font-size: 60px;
 .big-div{
   display: flex;
 }
+
+.logout-bttn{
+margin-left: 20px;
+font-size: 40px;
+border-radius: 90px;
+text-align: center;
+justify-content: center;
+margin-top: 30px;
+background-color: salmon;
+}
+
+.logout-bttn:hover{
+  background-color: aqua;
+  color: lightsalmon;
+  transition: all 0.5s;
+  font-size: 50px; 
+  zoom: 30px;
+  box-shadow: 20px 50px 100px aqua;
+  cursor: pointer;
+}
+
+
+
