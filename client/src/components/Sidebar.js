@@ -5,10 +5,10 @@ import {FcMoneyTransfer} from 'react-icons/fc';
 import {GiPapers, GiReceiveMoney, GiRotaryPhone} from 'react-icons/gi';
 import {FaUserAlt, FaBars, FaBook, FaFileContract} from 'react-icons/fa';
 import { NavLink } from 'react-router-dom';
+import {ImExit} from 'react-icons/im'
 
 
-
-function Sidebar({}) {
+function Sidebar({handleLogout}) {
 // const [isOpen, setIsOpen]= useState(false);
 // const toggle = () => setIsOpen(!isOpen);
 
@@ -38,7 +38,7 @@ function Sidebar({}) {
 
     return (
         // <div className="container">
-            <div style = {{width: "398px" }} className="sidebar">
+            <div style = {{width: "398px"  }} className="sidebar">
                 <div className="top-section">
                     <h1 style = {{display: "block"  }}className="logo"> 
                     <GiRotaryPhone/>TeleDealer </h1>
@@ -51,14 +51,15 @@ function Sidebar({}) {
                 <NavLink to={item.path} key={index} className="link" activeclassname="active">
                     <div className="icon">{item.icon}</div>
                     <div style = {{display: "block" }}className="link_text">{item.name}</div>
-
-
                 </NavLink>
                 ))
                 }
-            </div>
+                <button className= "logout-bttn" onClick={handleLogout}> 
+                <ImExit/>
+                
+            </button>
             
-        // </div>
+         </div>
     )
 
 }

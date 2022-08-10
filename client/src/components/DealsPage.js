@@ -1,15 +1,20 @@
 import react from 'react'
 import Deals from '../components/Deals'
+import Sidebar from '../components/Sidebar'
 
+function DealsPage ({deals, employee}) {
 
-function DealsPage ({deals}) {
+    console.log("forgi", employee)
 
+    const emdeals = employee.deals
     return(
     // <main classname="main">
-    // <div className="big-deals-div">
+    
+
+
+        <div>
         <div className="deals-div">
-            <div className="deals-header">DEALS FILED</div>
-    {deals.map((element) => {
+    {emdeals.map((element) => {
         return (<Deals deal={element} />
         )
     })
@@ -18,6 +23,7 @@ function DealsPage ({deals}) {
      <button className="add-deals" > New deal </button>
     </div>
     // </div>
+     
     // </main>
     )
     

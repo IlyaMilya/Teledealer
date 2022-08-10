@@ -22,6 +22,7 @@ code {
 .loan-amount{
   text-align: center;
 font-size: 30px;
+margin-top: 0px;
 } 
 
 .basic-deal-info{
@@ -29,6 +30,8 @@ font-weight:10px;
   
 }
 .deals-container {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  color:indianred;
 margin-left: 95px;
 position: center;
 width: 60vh;
@@ -41,12 +44,47 @@ border-color: black;
 border-style:none;
 background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyasocuZSdehmxhKNazhkX2mYNZHa9H9LLBA&usqp=CAU');
 background-blend-mode: lighten;
+box-shadow: -30px 20px 15px salmon;
+margin-bottom: 20px;
 }
 
 .confirm-button {
-  position: center;
+  position:center;
+  box-shadow: 3px 4px 3px ;
+  font-size: 35px;
+  border-radius: 65px;
+  margin-bottom: 20px;
+  font-family: fantasy;
+
 }
 
+.confirm-button:hover {
+  box-shadow: 6px 13px 0px indianred;
+  cursor:pointer;
+  
+ 
+ 
+}
+
+.add-deals {
+  position:center;
+  box-shadow: 3px 4px 31px ;
+  border-radius: 65px;
+  margin-top: 14px;
+  font-size: 55px;
+  background-color: aqua;
+  font-family: fantasy;
+ margin-right: 33px;
+
+
+}
+
+.add-deals:hover {
+  box-shadow: 6px 13px 0px indianred;
+  cursor: pointer; 
+ 
+ 
+}
 
 
 /* .main {
@@ -58,27 +96,28 @@ margin-left: 100px;
 
 } */
 
-.deals-header {
-
+/* .deals-header {
+  display: none;
+  font-family:sans-serif;
   font-weight: 600;
-  font-size: 100px;
-  margin-right:10px;
-}
+  font-size: 60px;
+  margin-right:16px;
+} */
 
-.big-deals-div {
+/* .big-deals-div {
 
   width: 100vh;
   height: 100vh;
   padding-left: 10px;
-  background-color:lightgrey;
-}
+  background-color:lightgrey; */
+
 
 .deals-div{
 
   margin-left: 45%;
   position: center;
   display: block;
-  margin-top: 0px;
+  margin-top: 0;
   background-color: lightgrey;
   padding-left: 0px;
   text-align: center;
@@ -86,5 +125,15 @@ margin-left: 100px;
   background-color: lightgrey;
   background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyasocuZSdehmxhKNazhkX2mYNZHa9H9LLBA&usqp=CAU');
 background-blend-mode: lighten;
-  
+ padding-top: 40px;
+}
+
+.user-info {
+
+  margin-left: 50px;
+}
+
+.leads-more-space {
+
+  margin-bottom: 30px;
 }
